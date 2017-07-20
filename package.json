@@ -1,0 +1,14 @@
+{
+  "name": "dmrc_psyco_test",
+  "version": "1.0.0",
+  "description": "Demonstration of DMRC Psyco Test",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nadeem Sajjad",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

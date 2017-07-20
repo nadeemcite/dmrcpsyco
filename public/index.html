@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="myapp">
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div ng-controller="myCtrl">
+  {{timer}} <button ng-click="start()" ng-if="state==0">Start</button><button ng-click="restart()" ng-if="state==2">Restart</button>
+  <input style="width: 40%; float: right;" ng-model="keypressed" ng-keydown="keyEvent($event)" type="text" />
+  <div style="margin-left:30%;">
+    
+    <div class="rcorners0"  ng-repeat="l in lights" ng-class="l"></div>
+    <br/>
+    <h3 ng-if="state==2">Final Result Right -> {{score}} Wrong -> {{negativeScore}}</h3>
+  </div>
+  </div>
+  <script src="js/angular.min.js"></script>  
+  <script src="js/app.js"></script>
+</body>
+
+</html>
